@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="images/netflix-logo.png" alt="Netflix Logo" class="logo">
+        <div class="button-navbar">
+            <a href="#" class="language-btn">
+                <i class="fas fa-globe"></i>
+                <span class="language-text">English</span>
+                <i class="fas fa-caret-down"></i>
+            </a>
+            <button class="sign-in-btn">Sign In</button>
+        </div>
+    </nav>
+
+  <section class="hero">
+    <h1>Unlimited movies, TV shows, and more.</h1>
+    <h4>Starts at EUR 4.99. Cancel anytime.</h4>
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+    <div class="email-input">
+        <input type="email" placeholder="Email address">
+        <button class="main-btn">Get Started ></button>
+    </div>
+  </section>
+
+  <section class="body">
+    <div class="trending">
+        <h2>Trending Now</h2>
+        <div class="cards">
+            <div class="card" data-number="1">
+                <img src="images/court of gold.jpg" alt="court of gold">
+            </div>
+            <div class="card" data-number="2">
+                <img src="images/squid-games.jpg" alt="squid games">
+            </div>
+            <div class="card" data-number="3">
+                <img src="images/aqua-man.jpg" alt="aqua man">
+            </div>
+            <div class="card" data-number="4">
+                <img src="images/love-story.jpg" alt="love story">
+            </div>
+            <div class="card" data-number="5">
+                <img src="images/zero-day.jpg" alt="zero day">
+            </div>
+        </div>
+    </div>
+    <div class="reasons">
+        <h2>More Reasons to Join</h2>
+        <div class="reasons-cards">
+            <div class="reasons-card">
+                <h3>Enjoy on your TV</h3>
+                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                <img src="images/tv.png" alt="tv">
+            </div>
+            <div class="reasons-card">
+                <h3>Download your shows to watch offline.</h3>
+                <p>Save your favorites easily and always have something to watch.</p>
+                <img src="images/arrow.png" alt="arrow">
+            </div>
+            <div class="reasons-card">
+                <h3>Watch everywhere</h3>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                <img src="images/commet.png" alt="watch everywhere">
+            </div>
+            <div class="reasons-card">
+                <h3>Create profiles for children.</h3>
+                <p>Send children on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+                <img src="images/smiling-emoji.png" alt="children">
+            </div>
+        </div>
+    </div>
+
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-questions">
+            <div class="faq-question">
+                <input type="checkbox" id="faq1">
+                <label class="faq-header" for="faq1">
+                    <h3>What is Netflix?</h3>
+                    <div class="faq-toggle"></div>
+                </label>
+                <div class="faq-content">
+                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+                </div>
+            </div>
+
+            <div class="faq-question">
+                <input type="checkbox" id="faq2">
+                <label class="faq-header" for="faq2">
+                    <h3>How much does Netflix cost?</h3>
+                    <div class="faq-toggle"></div>
+                </label>
+                <div class="faq-content">
+                    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee.</p>
+                </div>
+            </div>
+
+            <div class="faq-question">
+                <input type="checkbox" id="faq3">
+                <label class="faq-header" for="faq3">
+                    <h3>Where can I watch?</h3>
+                    <div class="faq-toggle"></div>
+                </label>
+                <div class="faq-content">
+                    <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                </div>
+            </div>
+
+            <div class="faq-question">
+                <input type="checkbox" id="faq4">
+                <label class="faq-header" for="faq4">
+                    <h3>How do I cancel?</h3>
+                    <div class="faq-toggle"></div>
+                </label>
+                <div class="faq-content">
+                    <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                </div>
+            </div>
+
+            <div class="faq-question">
+                <input type="checkbox" id="faq5">
+                <label class="faq-header" for="faq5">
+                    <h3>What can I watch on Netflix?</h3>
+                    <div class="faq-toggle"></div>
+                </label>
+                <div class="faq-content">
+                    <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                </div>
+            </div>
+
+            <div class="faq-question">
+                <input type="checkbox" id="faq6">
+                <label class="faq-header" for="faq6">
+                    <h3>Is Netflix good for kids?</h3>
+                    <div class="faq-toggle"></div>
+                </label>
+                <div class="faq-content">
+                    <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter">
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="email-input">
+            <input type="email" placeholder="Email address">
+            <button class="main-btn">Get Started ></button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Questions? Contact Us.</p>
+    <div class="footer-links">
+        <ul>
+            <li>FAQ</li>
+            <li>Investor Relations</li>
+            <li>Privacy</li>
+            <li>Speed Test</li>
+        </ul>
+        <ul>
+            <li>Help Center</li>
+            <li>Jobs</li>
+            <li>Cookie Preferences</li>
+            <li>Legal Notices</li>
+        </ul>
+        <ul>
+            <li>Account</li>
+            <li>Ways to Watch</li>
+            <li>Corporate Information</li>
+            <li>Only on Netflix</li>
+        </ul>
+        <ul>
+            <li>Media Center</li>
+            <li>Terms of Use</li>
+            <li>Contact Us</li>
+        </ul>
+
+    </div>
+    <div class="region">
+        <a href="#" class="language-btn">日本 English ▼</a>
+        <p>Netflix Serbia</p>
+    </div>
+  </footer>
+</body>
+</html>
