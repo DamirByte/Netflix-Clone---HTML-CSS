@@ -158,7 +158,7 @@ input  {
 }
 
 .body .trending h2 {
-    font-size: 32px;
+    font-size: 32px !important;
     font-weight: 700;
 }
 
@@ -272,10 +272,12 @@ input  {
     font-weight: 700;
     align-self: flex-start;     
     margin-bottom: 20px;
-    margin-left: 100px;
+    margin-left: 0;
 }
 
 .faq-questions {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -284,31 +286,42 @@ input  {
 }
 
 .faq-question {
-    background: var(--card-bg);
-    padding: 20px;
-    border-radius: 4px;
-    width: 1000px;
-    cursor: pointer !important;
+    width: 100%;
+    background: #2D2D2D;
+    margin-bottom: 8px;
 }
 
 .faq-header {
+    padding: 24px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-header h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    color: #fff;
+    padding-right: 40px;
 }
 
 .faq-toggle {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 30px;
     height: 30px;
-    position: relative;
-    transition: transform 0.3s ease;
 }
 
 .faq-toggle::before,
 .faq-toggle::after {
     content: '';
     position: absolute;
-    background: var(--white);
+    background: #fff;
     transition: transform 0.3s ease;
 }
 
@@ -329,8 +342,11 @@ input  {
 .faq-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
-    margin-top: 0;
+    transition: all 0.3s ease;
+    padding: 0 30px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #fff;
 }
 
 .faq-question input {
@@ -338,18 +354,13 @@ input  {
 }
 
 .faq-question input:checked ~ .faq-content {
-    max-height: 500px;
-    margin-top: 20px;
+    max-height: 1200px;
+    padding: 0 30px 24px;
 }
 
 .faq-question input:checked ~ .faq-header .faq-toggle::before {
     transform: rotate(90deg);
 }
-
-.faq-question h3 {
-    font-size: 24px;
-    font-weight: 700;
-}                           
 
 .newsletter {
     width: 100%;
@@ -414,6 +425,10 @@ ul li {
 
 
 @media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
     .arrow {
         display: none;
     }
@@ -470,7 +485,7 @@ ul li {
         margin: 0;
     }
     h2 {
-        font-size: 18px !important;
+        font-size: 30px !important;
         margin-bottom: 20px;
         margin-top: 20px;
     }
@@ -484,11 +499,16 @@ ul li {
         font-weight: 400 !important;
     }
 
+    .faq {
+        padding: 20px;
+    }
+
     .faq h2 {
         width: 100%;
         text-align: start;
         margin: 0;
         margin-bottom: 20px;
+        margin-left: 0 !important;
     }
 
     .faq * {
@@ -496,12 +516,28 @@ ul li {
     }
 
     .faq-questions {
-        width: 100%;
+        width: 100% !important;
     }
 
     .faq-question {
-        width: 100%;
-        text-align: start;
+        width: 100% !important;
+        margin: 0 !important;
+        
+    }
+
+    .faq-header h3 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .faq-content {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .faq-toggle {
+        min-width: 24px;
+        height: 24px;
     }
 
     .newsletter {
@@ -529,5 +565,42 @@ ul li {
         width: 150px;
     }
     
+    .faq {
+        width: 100% !important;
+        padding: 0;
+    }
+    
+    .faq-questions {
+        width: 100%;
+    }
+
+    .faq-question {
+        width: 90%;
+        margin: 0 auto 8px auto;
+    }
+
+    .faq-header {
+        padding: 20px 24px;
+    }
+
+    .faq-header h3 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .faq-content {
+        padding: 0 24px;
+        font-size: 16px;
+    }
+
+    .faq-question input:checked ~ .faq-content {
+        padding: 0 24px 20px;
+    }
+
+    .faq-toggle {
+        flex-shrink: 0;
+        min-width: 24px;
+        height: 24px;
+    }
 }
 }
